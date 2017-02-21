@@ -20,7 +20,7 @@ export default {
   }
   setTimeout(() => {
     this.$store.commit('CHANGE_USER', payload)
-  },1000)
+  },4000)
   },
   components: {
     CcUsers

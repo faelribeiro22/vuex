@@ -1,5 +1,5 @@
 <template>
-  <button @click="mudarDados">Mudar Dados do Usuário</button>
+  <button :disabled="!hasUser" @click="mudarDados">Mudar Dados do Usuário</button>
 </template>
 
 <script>
@@ -13,6 +13,11 @@ export default {
       }
       this.$store.commit('CHANGE_USER', payload)
     },
+  },
+  computed: {
+    hasUser () {
+      return this.$store.state.user.name !== ''
+    }
   }
 }
 </script>
