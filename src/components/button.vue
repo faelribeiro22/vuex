@@ -9,7 +9,9 @@ export default {
       const payload = {
         name: 'Outro nome',
         email: 'email@outro.com',
-        level: 'usuario-raso'
+        level: 'usuario-raso',
+        city: 'Lugar nenhum',
+        state: 'Aqui mesmo'
       }
       this.$store.commit('CHANGE_USER', payload)
     },

@@ -15,6 +15,9 @@ export default {
   computed: {
     email() {
       return this.$store.state.user.email
+    },
+    localidade () {
+      return this.$store.getters.localidade
     }
   }
 }

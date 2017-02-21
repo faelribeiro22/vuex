@@ -3,6 +3,8 @@ export default {
     name: '',
     email: '',
     level: '',
+    city: '',
+    state: ''
   },
   token: 'dsfasfasfdasf'
 }
